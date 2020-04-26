@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css-prof/styles.css">
+    <link rel="stylesheet" href="./css-prof/all.css">
+
+     <style> 
+        .clearfix:before,
+        .clearfix:after {
+            content: '';
+            display: block;
+        }
+        .clearfix.after {
+            clear: both;
+        }
+        .profile-photo {
+            display: inline-block;
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+        }
+        .profile-photo:hover {
+            background: rgba(0,0,1,0.5);
+
+        }
+        .profile-photo:hover .photo_setting{
+            color: white;
+            display: block;
+        }
+        .photo_setting{
+            display: none;
+
+            margin: 40% 0 0 40%;
+        }
+        .trash_post {
+            display: inline-block;
+            margin-left: 50px;
+            padding-top: 0px;
+
+        }
+        .update_post {
+
+            padding-top: 0px;
+            margin-right: 50PX;
+            display: inline-block;
+        }
+        .fa-sync {
+            height: 20px;
+            padding-bottom: 10px;
+        }
+        .fa-sync:hover {
+            color: #98f2f5;
+        }
+        .fa-trash {
+            height: 20px;
+            padding-bottom: 10px;
+        }
+        .fa-trash:hover {
+            color: #98f2f5;
+        }
+        a{
+            text-decoration: none;
+        }
+        .wrapper-content {
+            padding-top: 40px;
+        }
+        .eddpost-text {
+            margin: 100px 0 40px 400px;
+
+        }
+        .picture-section {
+          display: inline-block;
+        }
+    .edd_photo {
+        background: grey;
+        border-radius: 5px;
+        }
+    .text-center{
+        color:#0470cf; 
+        text-transform:uppercase;
+        font-size: 23px;
+        margin: -50px 0 80px 0;
+        display: block;
+        text-align: center;
+    }
+    .box {
+    padding-bottom: 0;
+    /* border-radius: 25px; */
+    position: relative;
+    display: inline-block;
+    margin-top: 200px;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    /* background-color: rgba(184, 237, 242, 0.89); */
+    border-radius: 13px;
+    padding: 0px 100px;}
+    .input-container{
+        position:relative;
+        margin-bottom:0px;
+    }
+    .input-container label{
+        position:absolute;
+        top:0px;
+        left:0px;
+        font-size:16px;
+        color:#0470cf; 
+        pointer-event:none;
+        transition: all 0.5s ease-in-out;
+    }
+    .input-container input{ 
+      border:0;
+      border-bottom:1px solid #555;  
+      background:transparent;
+      width:100%;
+      padding:8px 0 5px 0;
+      font-size:16px;
+      color:#0470cf;
+    }
+    .input-container input:focus{ 
+     border:none;   
+     outline:none;
+     border-bottom:1px solid #e74c3c;   
+    }
+
+
+    .myButton {
+        box-shadow: 0px 10px 14px -7px #3dc21b;
+        background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+        background-color:#44c767;
+        border-radius:8px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:20px;
+        font-weight:bold;
+        padding:13px 32px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #2f6627;
+        margin-left: 42%;
+    }
+    .myButton:hover {
+        background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+        background-color:#5cbf2a;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+
+/*.btn:after{
+    content:"";
+    position:absolute;
+    background:rgba(0,0,0,0.50);
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+}*/
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+    top:-12px;
+    font-size:15px;
+    
+}
+
+.main-picture {
+  border-radius: 5px;
+  box-shadow:0 5px  10px rgba(0,0,0,0.5);
+}
+.view-description{
+  margin-left: 
+  padding: 0px;
+  margin-bottom : 0px;
+}
+.description-text {
+  color: black;
+  margin-bottom: 0px;
+}
+.hr {
+  margin-top: 50px;
+  margin-bottom : 50px;
+  display:block;
+  opacity: 0.5;
+
+}
+.post-primary-info {
+  color: black;
+  font-size: 15px;
+  display: block;
+  float: right;
+}
+.caret {
+  font-size: 50px;
+  opacity: 0.5;
+}
+.caret:hover { 
+  opacity: 1;
+}
+.button-caret:hover {
+  /*background: rgba(0,0,0,0.5);*/
+  /*width: 100px;*/
+ 
+}
+/*.button-caret:hover .caret{
+  color:white;
+}*/
+.like,.dislike{
+  margin-right: 25px;
+  margin-left: 15px;
+  font-size: 15px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+.dislike {
+  margin-bottom: 0px;
+}
+.main-picture {
+  margin-top: 0px;
+}
+.cancle-button {
+  font-size: 18px;
+  color: red;
+  margin-top: 0px;
+  border-bottom: none;
+  background: white;
+  border-width: 0px;
+  float: right;
+}
+.comment-button {
+  margin-left: 10px;
+  float: right;
+  margin-right :0 ;
+  background: #3369ab;
+  border-color: #3369ab;
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 2px;
+  color: white;
+
+}
+.photo-section {
+  display: block;
+}
+.comments {
+  margin-top: -130px;
+
+
+}
+.main-comments {
+  margin-top: 0px;
+}
+.comment-place {
+  margin-bottom: 50px;
+}
+.comment-user {
+  color: #000;
+  font-family: cursive;
+}
+.comment  {
+
+  font-family:monospace;
+}
+.fa-user{
+  margin-right: 10px;
+}
+.delete, .update {
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 23%;
+}
+.update {
+  color: #116882;
+}
+.delete {
+  color: #911d14;
+  margin-left: 10%;
+}
+.delete:hover, .update:hover{
+color: black;
+}
+
+    </style>
+
+
+</head>
+<body>
+    <header class="clearfix">
+        <div class="wrapper menu">
+            <div class="img-item">
+                <img class="main-photo" src="./img/main-logo.png" alt="">
+            </div>
+            <div class="title-item">
+                    Make Memories
+            </div>
+            <ul class="list-item">
+                <li>
+                    <a href="#" class="i">
+                        <i class="fas fa-search fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="i">
+                        <i class="far fa-compass fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="i">
+                        <i class="fas fa-user fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+        <div class="wrapper">
+            <div class="content" >
+                <div class="container ">
+                    <div class="wrapper eddpost-text">
+                        <div class="title-item tada">
+                              Name of post
+                          </div>
+                    </div>
+                    <section class="picture-section">
+                      <div class="wrapper">
+                          <div class="main-picture">
+                            <div class="button-caret caret-left">
+                              <i class="fas fa-caret-left fa-2x caret"></i>
+                            </div>
+                            <div class="button-caret caret-right">
+                              <i class="fas fa-caret-right fa-2x caret"></i>
+                            </div>
+                            <!-- <img src="#" alt=""> -->
+                          </div>
+                      </div>
+                  </section>
+                 
+                  <div class="box">
+                     <a href="#" class="update">
+                        <i class="fas fa-pen" style="margin-left: 20px;font-size: 25px;"></i>
+                        Update post 
+                      </a>
+                      <a href="#" class="delete">
+                        Delete post
+                        <i class="fas fa-trash fa-2x"style="margin-right : 20px; font-size: 25px;"></i>
+                        
+                      </a>
+                    <div class="view-description">
+                      <h3 class="description-text"> Lalalla description about this post</h3>
+                      <div class="post-primary-info">
+                        123 <i class="like fas fa-thumbs-up fa-2x"></i>
+                        0 <i class="dislike fas fa-thumbs-down fa-2x"></i>
+                      </div>  
+                      <hr class="hr">
+                    </div>
+                    
+                    <div class="main-comments">
+                      <h4><i class="fas fa-users" ></i>     Comments ...</h4>
+                    </div>
+                    
+                    </div>
+                    <div class="comments ">
+                       <div class="comment-place">
+                         <p class="comment-user"><i class="fas fa-user"></i> Bektur Kabylbekov</p>
+                         <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo architecto, quis natus!</p>
+                       </div>
+                       <div class="comment-place">
+                         <p class="comment-user"><i class="fas fa-user"></i> Bektur Kabylbekov</p>
+                         <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo architecto, quis natus!</p>
+                       </div>
+                       <div class="comment-place">
+                         <p class="comment-user"><i class="fas fa-user"></i> Bektur Kabylbekov</p>
+                         <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo architecto, quis natus!</p>
+                       </div>
+                       
+
+                   </div>
+                </div> 
+            </div>
+
+    <script src="./js/all.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

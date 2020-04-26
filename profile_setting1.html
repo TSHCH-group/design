@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css-prof/styles.css">
+    <link rel="stylesheet" href="./css-prof/all.css">
+    <style>
+        .profile-photo {
+            display: inline-block;
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+        }
+        .profile-photo:hover {
+            background: rgba(0,0,1,0.5);
+
+        }
+        .profile-photo:hover .photo_setting{
+            color: white;
+            display: block;
+        }
+        .photo_setting{
+            display: none;
+
+            margin: 40% 0 0 40%;
+        }
+        .trash_post {
+            display: inline-block;
+            margin-left: 50px;
+            padding-top: 0px;
+
+        }
+        .update_post {
+
+            padding-top: 0px;
+            margin-right: 50PX;
+            display: inline-block;
+        }
+        .fa-sync {
+            height: 20px;
+            padding-bottom: 10px;
+        }
+        .fa-sync:hover {
+            color: #98f2f5;
+        }
+        .fa-trash {
+            height: 20px;
+            padding-bottom: 10px;
+        }
+        .fa-trash:hover {
+            color: #98f2f5;
+        }
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper menu">
+            <div class="img-item">
+                <img class="main-photo" src="./img/main-logo.png" alt="">
+            </div>
+            <div class="title-item">Make Memories</div>
+            <ul class="list-item">
+                <li>
+                    <a href="#" class="i">
+                        <i class="fas fa-search fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="i">
+                        <i class="far fa-compass fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="i">
+                        <i class="fas fa-user fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="main-picture">
+                <div class="item1">
+                    <div class="profile-logo">
+                        
+                        <div class="profile-photo" title="Изменить фото">
+                            <a href="#" class="profile-photo-link">
+                                <i class="fas fa-camera fa-2x  photo_setting">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="desc">
+                        <div class="name-of-company">
+                            Name of a Company
+                        </div>
+                        <div class="description">
+                            Short description about a company for example: our company is lalalala
+                        </div>
+                    </div>
+                </div>
+                <div class="item3">
+                    <a href="#" class="settings-icon" title="Изменить описание компании">
+                        <i class="fas fa-cog fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="rating-location">
+                <div class="rating">
+                    <span class="fa fa-star fa-lg checked"></span>
+                    <span class="fa fa-star fa-lg checked"></span>
+                    <span class="fa fa-star fa-lg checked"></span>
+                    <span class="fa fa-star fa-lg not-checked"></span>
+                    <span class="fa fa-star fa-lg not-checked"></span>
+                </div>
+                <div class="location">
+                    <div class="location-logo">
+                        <i class="fas fa-map-marked-alt fa-2x"></i>
+                    </div>
+                    <div class="location-text">
+                        location
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="wrapper">
+            <div class="content">
+                <div class="container">
+                    <div class="items">
+                        <img src="./img/container-img/1.jpg" alt="">
+                       
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/2.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/3.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/4.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/5.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/6.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/7.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/8.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/9.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/10.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Park
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/11.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Pamuk
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items">
+                        <img src="./img/container-img/12.jpg" alt="">
+                        <div class="item-text">
+                             <div class="update_post">
+                                <i class="fas fa-sync fa-2x" title="Изменить пост" ></i>
+                            </div>
+                            Mersin
+                            <div class="trash_post">
+                                <i class="fas fa-trash fa-2x" title="Удалить пост"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <a href="add_post.html" class="eddpost">
+                    <div class="more-posts">
+                        Edd post
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/all.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
